@@ -14,6 +14,21 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const Hero = () => {
+  const handleClick = async () => {
+    const response = await fetch('/api/cv');  
+
+    if (response.status !== 200) {
+      console.error(response.status, response.statusText);
+    }
+
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'curricullum.pdf';
+    link.click();
+};
+
   return (
     <div className='flex w-full items-center gap-20 lg:gap-28 xl:gap-36 '>
       <div className='flex gap-4'>
@@ -29,7 +44,7 @@ export const Hero = () => {
                 </div>
               </Link>
             </Button>
-            <Button className='lg:w-2/4 w-full h-12'>
+            <Button className='lg:w-2/4 w-full h-12' onClick={handleClick}>
               <div className='flex gap-1.5 items-center'>
                 <p>Download CV</p> <FaRegFileAlt size={22} className='hidden md:flex' />
               </div>
@@ -45,7 +60,7 @@ export const Hero = () => {
         <div className='w-2/5 hidden lg:flex ml-2'>
           <Avatar className='w-72 h-72'>
             <AvatarImage src="/image1.jpeg" alt="@shadcn" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarFallback>João Fresco</AvatarFallback>
           </Avatar>
         </div>
       </div>

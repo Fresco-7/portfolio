@@ -3,7 +3,6 @@
 
 import { Contact } from "@/components/contact";
 import { Hero } from "@/components/hero";
-import { NavItem } from "@/components/navbar/navItem";
 import { Porfolio } from "@/components/portolio";
 import { Skills } from "@/components/skills";
 import {
@@ -11,7 +10,6 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "@/components/ui/avatar"
-import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -19,7 +17,7 @@ export default function Home() {
       <div className="w-full flex flex-col items-center justify-center gap-10">
         <Avatar className='w-72 h-72 lg:hidden'>
           <AvatarImage src="/image1.jpeg" alt="@shadcn" />
-          <AvatarFallback>CN</AvatarFallback>
+          <AvatarFallback>João Fresco</AvatarFallback>
         </Avatar>
         <Hero />
       </div>

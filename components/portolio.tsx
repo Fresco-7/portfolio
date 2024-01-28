@@ -10,6 +10,9 @@ import { Card, CardContent } from './ui/card'
 import Image from 'next/image'
 
 export const Porfolio = () => {
+  
+
+
     return (
         <div className='flex flex-col jus w-full'>
             <div className='flex flex-col justify-center items-center'>
@@ -54,6 +57,6 @@ const images = [
     },
     {
         image: "/CrudApp.png",
-        description: 'CRUD application, written in NextJs, '
+        description: 'CRUD application, written in NextJs, with a mongoDb database.'
     },
 ]
