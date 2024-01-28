@@ -23,7 +23,7 @@ export const BigCard = ({items} : {items : BigCardItems[]}) => {
 const BigCardItem = ({title, description} : {title: string, description : string}) => {
   return (
     <div className='p-1 flex flex-col gap-2'>
-      <div className='flex gap-1'>
+      <div className='flex gap-1 w-full'>
         <Verified className='hidden xl:flex'/>
         <span className='text-xl'>{title}</span>
       </div>

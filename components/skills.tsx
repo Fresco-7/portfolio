@@ -19,12 +19,17 @@ export const Skills = () => {
                     <TabsList className='mb-5'>
                         <TabsTrigger value="backend">Backend</TabsTrigger>
                         <TabsTrigger value="frontend">Frontend</TabsTrigger>
+                        <TabsTrigger value="others">Others</TabsTrigger>
+
                     </TabsList>
                     <TabsContent value="frontend" className='w-full  flex justify-center' >
                         <BigCard items={frontendItems} />
                     </TabsContent>
                     <TabsContent value="backend" className='w-full  flex justify-center' >
                         <BigCard items={backendItems} />
+                    </TabsContent>
+                    <TabsContent value="others" className='w-full  flex justify-center' >
+                        <BigCard items={others} />
                     </TabsContent>
                 </Tabs>
 
@@ -47,15 +52,30 @@ const frontendItems: BigCardItems[] = [
         title: 'JavaScript',
         description: 'itermidiate'
     },
-    {
-        title: 'Git',
-        description: 'basic'
-    },
+
     {
         title: 'React',
         description: 'intermidiate'
     },
 
+]
+const others: BigCardItems[] = [
+    {
+        title: 'Git',
+        description: 'basic'
+    },
+    {
+        title: 'Express',
+        description: 'basic'
+    },
+    {
+        title: 'NextJs',
+        description: 'advanced'
+    },
+    {
+        title: 'Flask',
+        description: 'basic'
+    },
 ]
 
 const backendItems: BigCardItems[] = [
@@ -65,23 +85,23 @@ const backendItems: BigCardItems[] = [
     },
     {
         title: 'Python',
-        description: 'Itermidiate'
+        description: 'itermidiate'
     },
     {
         title: 'TypeScript',
-        description: 'Itermidiate'
+        description: 'itermidiate'
     },
     {
         title: 'C',
-        description: 'Basic'
+        description: 'basic'
     },
     {
         title: 'NodeJs',
-        description: 'Basic'
+        description: 'basic'
     },
     {
         title: 'MySql',
-        description: 'Intermidiate'
+        description: 'intermidiate'
     },
     {
         title: 'Java',

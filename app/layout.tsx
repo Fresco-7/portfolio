@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const montserrat = Poppins({ subsets: ["latin"], weight: '500' });
 
 export const metadata: Metadata = {
-  title: "João Fresco",
+  title: "João Fresco | Portfolio",
   description: "João Fresco's Portfolio website",
 };
 
