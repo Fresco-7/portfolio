@@ -29,8 +29,8 @@ export const Hero = () => {
 };
 
   return (
-    <div className='flex w-full items-center gap-20 lg:gap-28 xl:gap-36 '>
-      <div className='flex gap-4'>
+    <div className='flex w-full items-center justify-center gap-20 lg:gap-28 xl:gap-36 '>
+      <div className='flex justify-center gap-4'>
         <div className='flex flex-col gap-5 w-full lg:w-3/5'>
           <h1 className='text-2xl lg:text-5xl xl:text-6xl text-foreground/90'>João Fresco</h1>
           <span className='text-muted-foreground text-md text-justify pr-14'>{`I'm a junior full stack developer based in Lisbon, and I'm very passionate and dedicated to my work.`}</span>
@@ -56,7 +56,7 @@ export const Hero = () => {
             <NavItem target='_black' href='https://www.linkedin.com/in/jo%C3%A3o-afonso-fernandes-de-oliveira-fresco-baa8a4239/' ><AiOutlineLinkedin size={24} /></NavItem>
           </div>
         </div>
-        <div className='w-2/5 hidden lg:flex ml-2'>
+        <div className='w-2/5 hidden lg:flex justify-end ml-2'>
           <Avatar className='w-72 h-72'>
             <AvatarImage src="/image1.jpeg" alt="@shadcn" />
             <AvatarFallback>João Fresco</AvatarFallback>

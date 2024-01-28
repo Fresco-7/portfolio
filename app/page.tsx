@@ -13,7 +13,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="py-24 flex-1 justify-center h-screen" id='home'>
+    <div className="w-full py-24 flex-1 justify-center h-screen" id='home'>
       <div className="w-full flex flex-col items-center justify-center gap-10">
         <Avatar className='w-72 h-72 lg:hidden'>
           <AvatarImage src="/image1.jpeg" alt="@shadcn" />
@@ -27,7 +27,7 @@ export default function Home() {
       <div className="mt-24" id='porfolio'>
         <Porfolio />
       </div>
-      <div className="mt-24 mb-10" id='contact'>
+      <div className="mt-24 mb-20" id='contact'>
         <Contact />
       </div>
     </div>
