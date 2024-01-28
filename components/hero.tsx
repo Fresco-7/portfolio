@@ -19,7 +19,7 @@ export const Hero = () => {
       <div className='flex gap-4'>
         <div className='flex flex-col gap-5 w-full lg:w-3/5'>
           <h1 className='text-2xl lg:text-5xl xl:text-6xl text-foreground/90'>João Fresco</h1>
-          <span className='text-muted-foreground text-md text-justify pr-14'>I'm a junior full stack developer in Lisbon, and I'm very passionate and dedicated to my work</span>
+          <span className='text-muted-foreground text-md text-justify pr-14'>{`I'm a junior full stack developer in Lisbon, and I'm very passionate and dedicated to my work`}</span>
 
           <div className='flex flex-col md:flex-row gap-4'>
             <Button className='lg:w-2/4 w-full h-12'>
