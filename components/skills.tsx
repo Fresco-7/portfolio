@@ -42,15 +42,15 @@ export const Skills = () => {
 const frontendItems: BigCardItems[] = [
     {
         title: 'HTML',
-        description: 'itermidiate'
+        description: 'intermediate'
     },
     {
         title: 'CSS',
-        description: 'itermidiate'
+        description: 'intermediate'
     },
     {
         title: 'JavaScript',
-        description: 'itermidiate'
+        description: 'intermediate'
     },
 
     {
@@ -85,11 +85,11 @@ const backendItems: BigCardItems[] = [
     },
     {
         title: 'Python',
-        description: 'itermidiate'
+        description: 'intermediate'
     },
     {
         title: 'TypeScript',
-        description: 'itermidiate'
+        description: 'intermediate'
     },
     {
         title: 'C',
