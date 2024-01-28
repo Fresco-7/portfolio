@@ -24,7 +24,7 @@ export const Hero = () => {
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'curricullum.pdf';
+    link.download = 'cv.pdf';
     link.click();
 };
 
